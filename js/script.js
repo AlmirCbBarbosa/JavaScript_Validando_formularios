@@ -1,3 +1,4 @@
+import ehUmCPF from "./valida-cpf.js";
 const camposDeFormulario = document.querySelectorAll("[required]");
 
 camposDeFormulario.forEach((campo) => {
@@ -5,5 +6,7 @@ camposDeFormulario.forEach((campo) => {
 }); //inseri um ouvidor de eventos em cada elemento da array
 
 function verificaCampo(campo){
-    
+    if(campo.name == "cpf" && campo.value.length >= 11){
+        ehUmCPF(campo);
+    }// se atendidos as condições ele executará a função ehUmCPF(campo)
 }
