@@ -33,9 +33,9 @@ function validaPrimeiroDigito(cpf){
         soma += cpf[tamanho] * multiplicador;
         multiplicador--;
     };
-
+   
     soma = (soma * 10) % 11;
-
+    
     if(soma == 10 || soma == 11){
         soma = 0
     }
@@ -53,7 +53,7 @@ function validaSegundoDigito(cpf){
     };
 
     soma = (soma * 10) % 11;
-
+    
     if(soma == 10 || soma == 11){
         soma = 0
     }
