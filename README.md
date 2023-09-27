@@ -7,7 +7,7 @@
 
 ## Tecnologias utilizadas durante o curso
 * JavaScript
-
+>Status: iniciando aula4
 ## Tecnologias utilizadas no projeto
 * HTML
 * CSS
