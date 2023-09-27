@@ -4,6 +4,7 @@ const camposDeFormulario = document.querySelectorAll("[required]");
 
 camposDeFormulario.forEach((campo) => {
     campo.addEventListener("blur", ()=> verificaCampo(campo));
+    campo.addEventListener("invalid", evento => evento.preventDefault());
 }); //inseri um ouvidor de eventos em cada elemento da array
 
 function verificaCampo(campo){
@@ -13,4 +14,5 @@ function verificaCampo(campo){
     if(campo.name == "aniversario" && campo.value != ""){
         ehMaiorDeIdade(campo);
     }
+    console.log(campo.validity);
 }
